@@ -1,0 +1,218 @@
+/* Fonts
+   -----
+   font-family: 'Lora', serif;
+   font-family: 'Ubuntu', sans-serif;
+  */
+
+body {
+	margin: 0;
+	font-family: 'Ubuntu', sans-serif;
+
+	font-size: 1rem;
+	font-weight: 300;
+
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Typography */
+
+
+h1,
+h2,
+h3 {
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	/*color: #143774;*/
+	margin-top: 0;
+
+	color: #24A0ED;
+}
+
+h1 {
+	font-size: 2rem;
+	margin: 0;
+	padding-bottom: 1em;
+}
+
+strong {
+	font-weight: 700;
+}
+
+/* Layout */
+
+.container {
+	width: 90%;
+	max-width: 1100px;
+
+	margin: 0 auto;
+
+}
+
+.container-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+header {
+	padding: 2em 0; /* 2em is 32px */
+	text-align: center;
+}
+
+.center {
+	margin-top: 1em;
+	text-align: center;
+}
+
+
+
+@media (min-width: 675px) {
+	.container-flex {
+		flex-direction: row;
+		flex: 1;
+	}
+}
+
+/* Navigation */
+
+nav  ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav li {
+	margin-left: 2em;
+}
+
+nav a {
+	text-decoration: none;
+
+	color: black;
+
+	font-weight: 600;
+	padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+	color: #24A0ED
+}
+
+
+@media (max-width: 675px) {
+	nav ul {
+		flex-direction: column;
+	}
+
+	nav li {
+		margin: .5em 0;
+	}
+}
+
+/* Main */
+
+main {
+	flex: 1;
+}
+
+.title-color {
+	color: black;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.divider {
+	border-bottom: 3px solid #CECECE;
+}
+
+img {
+	width: calc(33%);
+	min-height: 100%;
+
+	margin-right: 12%;
+	padding-bottom: 15px;
+}
+
+.text-box {
+	flex: 1;
+	flex-basis: auto;
+}
+
+.text-box a {
+	text-decoration: none;
+	color: #24A0ED;
+}
+
+.feature {
+	padding: 0;
+    list-style-type: none;
+}
+
+@media (max-width: 675px) {
+	main {
+		text-align: center;
+	}
+
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 675px) {
+	.row {
+		flex-direction: column;
+	}
+
+	.col {
+		width: 100%
+	}
+}
+
+footer {
+	text-align: center;
+	padding: 3em 0;
+}
+
+
+.footer-flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+
+.social-icon ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.social-icon:nth-child(2) li {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.social-icon a {
+	color: black;
+}
+
+.social-icon a:hover {
+	color: #24A0ED;
+}
